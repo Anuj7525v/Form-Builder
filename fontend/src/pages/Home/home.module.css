@@ -1,0 +1,339 @@
+.page {
+  background: black;
+  color: white;
+}
+.navBox {
+  display: flex;
+  justify-content: space-between;
+  height: 15vh;
+}
+.logo {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  margin-left: 2em;
+}
+.logo img {
+  width: 40px;
+  height: 40px;
+  padding-right: 10px;
+}
+.navBox p {
+  text-align: center;
+}
+.rightnav {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  margin-right: 2em;
+  width: auto;
+}
+.rightnav .btn1 button {
+  all: unset;
+  border: 1px solid blue;
+  background: blue;
+  border-radius: 10px;
+  padding: 8px 10px;
+  margin-right: 10px;
+}
+.rightnav .btn2 button {
+  all: unset;
+  border: 1px solid blue;
+  background: blue;
+  border-radius: 10px;
+  padding: 8px 10px;
+  margin-left: 10px;
+}
+
+.box1 {
+  display: flex;
+  flex-direction: column;
+}
+ 
+.top {
+  display: flex;
+  justify-content: space-between;
+}
+ 
+
+.iconT img {
+  width: 22vw;
+}
+.content {
+ 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.h1 h1 {
+  text-align: center;
+ background-color: linear-gradient(90deg, #4b83ff 0%, #b794f4 100%);
+  font-weight: 700;
+  font-size: 4em;
+}
+.middle .para {
+ 
+  padding: 5px;
+}
+
+.botbtn {
+  
+  padding: 10px;
+}
+.botbtn button {
+  all: unset;
+  border: 1px solid rgb(64, 179, 245);
+  background: rgb(64, 179, 245);
+  border-radius: 10px;
+  padding: 15px;
+}
+
+.iconC img {
+  width: 22vw;
+}
+.middle img {
+  width: 85vw;
+ 
+  margin-left: 6rem;
+}
+/* ----------------------------------------------------------------------------------- */
+
+.box2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  
+}
+
+.header h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+}
+.para p {
+  font-weight: bolder;
+}
+.logodetail {
+ 
+  margin-top: 3rem;
+}
+.logodetail img {
+  width: 80vw;
+  height: 90vh;
+}
+
+/* ----------------------------------------------------------------------------------- */
+
+.box3 {
+ 
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+  margin-top: 3rem;
+}
+.img3 {
+ 
+  margin-right: 1rem;
+}
+
+.box3Content {
+ 
+  margin-left: 1rem;
+  display: flex;
+  flex-direction: column;
+  padding-top: 2rem;
+}
+.box3Content h1 {
+  font-weight: 700;
+  font-size: 2rem;
+}
+.box3Content p {
+  letter-spacing: 1px;
+  color: rgb(214, 211, 211);
+}
+
+/* ----------------------------------------------------------------------------------- */
+
+.box4 {
+  
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+  margin-top: 3rem;
+}
+.box4content {
+  
+  margin-right: 1rem;
+  display: flex;
+  flex-direction: column;
+  padding-top: 2rem;
+}
+.box4content h1 {
+  font-weight: 700;
+  font-size: 2rem;
+}
+.box4content p {
+  letter-spacing: 1px;
+  color: rgb(214, 211, 211);
+}
+.img4 {
+  
+  margin-left: 1rem;
+}
+
+/* ----------------------------------------------------------------------------------- */
+.box5 {
+ 
+  margin-top: 4rem;
+}
+.img5 img {
+  width: 98.5vw;
+}
+.box5Content {
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 2rem;
+}
+.box5Content h1 {
+  font-weight: 700;
+  font-size: 2.5rem;
+}
+
+/* ===-==---------------------------------------------------------*/
+.box6 {
+ 
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.box6content {
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.box6content h1 {
+    font-size: 2.5rem;
+}
+.box6content p {
+    color: rgb(197, 190, 190);
+    
+}
+.box6content p span{
+    font-weight: bold;
+    color: white;
+}
+ 
+/*-------------------------------------------------------------------*/
+
+.box7{
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 7rem;
+}
+.box7content{
+    margin-bottom: 4rem;
+}
+.box7content h1{
+    text-align: center;
+}
+
+/*----------------------------------------*/
+
+.box8{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 7rem;
+}
+.box8content{
+    margin-bottom: 2rem;
+}
+.box8content h2{
+    font-size: 2rem;
+}
+
+
+/*--------------------------------------------------------*/
+
+.box9{
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+    height: 100vh;
+}
+
+.imgT img{
+    width: 22vw;
+
+}
+
+.imgC img{
+    width: 22vw;
+}
+.box9content{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+}
+.box9h1{
+    margin: 2rem 0rem;
+}
+
+.box9h1 h1{
+    text-align: center;
+   
+
+}
+
+
+/*-----------------------------------------*/
+
+.box10{
+    display: flex;
+    justify-content: center;
+    background: rgb(24, 22, 22);
+    
+
+}
+
+ ul{
+    padding: 0rem 4rem;
+ }
+ ul li{
+    list-style: none;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    text-align: center;
+
+    
+}
+
+
+
+

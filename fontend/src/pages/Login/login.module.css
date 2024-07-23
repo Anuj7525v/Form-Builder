@@ -1,0 +1,105 @@
+.page{
+    width: 100vw;
+    height: 100vh;
+    background: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    
+
+}
+.Box{
+   
+    width: 21vw;
+    display: flex;
+    flex-direction: column;
+    height: 70vh;
+    justify-content: center;
+   
+    
+}
+
+
+.InputGroup{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-;
+  padding: 10px 0px 0px 0px;
+  margin-bottom: 15px;
+    
+    
+}
+
+.InputGroup label{
+    padding-bottom: 5px;
+}
+input{
+    all: unset;
+    border: 1px solid grey;
+    border-radius: 10px;
+    font-size: 1rem;
+    padding: 8px 7px;
+    width: 20vw;
+
+    
+
+}
+button{
+    width: 21vw;
+    border: 1px solid rgba(37, 139, 207, 0.733);
+    border-radius: 10px;
+    padding: 10px ;
+    background: rgba(37, 139, 207, 0.733);
+    color: white;
+    margin-top: 8px;
+
+    
+
+
+}
+.loginbox{
+    font-size: .8rem;
+    margin-top: 5px;
+    text-align: center;;
+}
+.triangle1{
+    width: 15vw;
+ height:22vh;
+ background: rgb(233, 117, 15);
+ clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+position: absolute;
+left: 5rem;
+bottom:15em;
+
+}
+.triangle2{
+    width: 15vw;
+ height:22vh;
+ background: rgb(233, 161, 29);
+ clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+position: absolute;
+left: 5rem;
+bottom:17em;
+
+}
+
+.circle1{
+ width: 20vw;
+ height:20vh;
+ background: rgb(214, 150, 94);
+ clip-path: circle(40% at 47% 100%); 
+position: absolute;
+bottom: 0px;
+}
+.circle2{
+width: 20vw;
+height:20vh;
+background: rgb(214, 150, 94);
+clip-path: circle(40% at 100% 49%);
+position: absolute;
+right: 0px;
+}
+
+
