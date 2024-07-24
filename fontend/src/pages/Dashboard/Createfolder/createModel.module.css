@@ -1,0 +1,51 @@
+
+.Model{
+  border: 2px solid rgb(80, 73, 73);
+  display: flex;
+  flex-direction: column;
+ border-radius: 10px;
+ background: rgb(32, 30, 30);
+
+  width: 32vw;
+  height: 35vh;
+}
+.Header{padding-left: 1.5rem;}
+.Header p{
+  font-size: 1.5em;
+ 
+}
+.Input{
+  margin-top: 8px;
+  padding-left: 1.5rem;
+}
+.Input input{
+  all: unset;
+  background: rgb(70, 68, 68);
+  padding: 13px 10px;
+  width: 25vw;
+  color: grey;
+  font-size: 1rem;
+  border-radius: 10px;
+ 
+}
+.btn{
+  display: flex;
+  
+  justify-content: space-around;
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  height: 25vh;
+  margin-bottom: 3px;
+  
+
+}
+.btn :nth-child(1){
+  color: rgb(104, 104, 238);
+  border-right: 1px solid rgb(88, 84, 84);
+  width: 10vw;
+}
+
+.btn button{
+  all: unset;
+}
+  

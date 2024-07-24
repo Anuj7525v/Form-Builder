@@ -1,0 +1,74 @@
+.page{
+ height: 100vh;
+  background: rgb(31, 28, 28);
+  color: white;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+.Header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid rgb(82, 81, 81);
+  height: 10vh;
+
+}
+.title{ 
+  border: 1px solid rgb(82, 81, 81);
+border-radius:10px ;
+padding: 5px 10px;
+
+}
+
+.folderbox{
+ 
+  height: 15vh;
+  margin-top: 10px;
+  display: flex;
+ align-items: center;
+ padding-left: 8rem;
+
+
+}
+.folderbox button{
+  all: unset;
+  border: 1px  solid rgb(82, 81, 81);
+  display: flex;
+ align-items: center;
+ text-align: center;
+ padding: 5px;
+ border-radius: 5px;
+ background: rgb(82, 81, 81);
+
+}
+.formbox{
+  
+  height: 30vh;
+  padding-left: 8rem ;
+  margin-bottom: 2rem;
+}
+.formbox button {
+  all: unset;
+   border: 1px solid rgb(86, 86, 250);
+   background: blue;
+   width: 13vw;
+   height: 30vh;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   font-size: 2rem;
+
+}
+.formbox button span{
+  font-size: 1rem;
+  margin-top: 2rem;
+  
+}
+.createbox{
+  position: absolute;
+  bottom: 15em;
+  left: 20rem;
+  
+}
