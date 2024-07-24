@@ -16,7 +16,7 @@ export default function SignUp() {
         e.preventDefault();
         const data = (username,email,password,confirmPassword);
         const response = await signup(data);
-        alert(response.data.username);
+        alert(response.data);
         navigate("/login");
 
     };

@@ -11,15 +11,15 @@ export default function SignUp() {
     const [password, setPassword] = useState('');
     const [error, setError] = useState('');
 
+    const navigate = useNavigate();
+
     const handleSubmit = async (e) => {
         e.preventDefault();
-        if(!email || !password){
-            setError("require the field..");
-        }
         login({email,password}).then((response) => {
-            alert(`Welcome,${response.data.name}`);
+            alert(`Welcome,${response.data.username}`);
             localStorage.getItem("token",response.data.token);
             localStorage.getItem("authId",response.data.authId);
+            navigate("/dashboard");
         });
 
         
