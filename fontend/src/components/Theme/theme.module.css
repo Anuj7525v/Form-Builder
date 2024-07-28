@@ -1,0 +1,40 @@
+.box {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .themeselector {
+    margin-bottom: 20px;
+  }
+  
+  .themeselector button {
+    margin: 0 5px;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .chatwindow {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  .message {
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px 0;
+  }
+  
+  .incoming {
+    background: #e6e6e6;
+  }
+  
+  .outgoing {
+    background: #007bff;
+    color: #fff;
+    align-self: flex-end;
+  }
+  

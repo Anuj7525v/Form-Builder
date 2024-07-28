@@ -8,16 +8,19 @@ const port =  4000;
 const mongoose = require("mongoose");
 const AuthRouter = require("./routes/Auth");
 const UpdateAuth = require("./routes/updateAuth");
+const allSetting = require("./routes/updateAuth");
 const FolderRouter = require("./routes/folder.js");
 const FormRouter = require("./routes/form.js");
 
+app.use(cors({origin:"http://localhost3000"}));
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended:true}));
 
 
 app.use("/api/auth",AuthRouter);
-app.use("/api/updateAuth",UpdateAuth);
+app.use("/api/updateauth",UpdateAuth);
+app.use("/api/updatesetting",allSetting)
 app.use("/api/folder",FolderRouter);
 app.use("/api/form",FormRouter);
 

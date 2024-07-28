@@ -19,7 +19,7 @@ import { CiShare1 } from "react-icons/ci";
 function Homepage() {
     const navigate = useNavigate();
     return (
-        <div className={styles.page} onClick={() => {navigate("/signup")}}>
+        <div className={styles.page}>
             <div className={styles.navBox}>
                 <div className={styles.logo}>
                     <img src={logo} alt="logo" className={styles.logoImg} />

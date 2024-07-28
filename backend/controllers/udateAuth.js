@@ -38,4 +38,15 @@ const updateAuth = async (req, res, next) => {
     }
 };
 
-module.exports = updateAuth;
+ const allSetting = async (req,res,next) => {
+    try{
+        const auth = await Auth.findById(req.authId);
+        res.status(200).send(auth);
+        
+    }
+    catch(error){
+        next(error)
+    }
+};
+
+module.exports = {updateAuth,allSetting,};

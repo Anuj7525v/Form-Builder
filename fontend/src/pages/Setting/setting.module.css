@@ -1,0 +1,84 @@
+.page{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  background:black;
+  color: white;
+}
+h3{
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+.rightbox {
+  width: 80%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid red;
+ 
+  
+}
+.rightp {
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+
+.inputGroup {
+  display: flex;
+  align-items: center;
+  border: 1px solid rgb(184, 181, 181);
+  margin: 17px 0px;
+  padding: 0px 0px 0px 3px;
+  color: rgb(184, 181, 181);
+  border-radius: 3px;
+  width: 30vw;
+}
+.inputGroup input {
+  width: 100%;
+  padding: 10px 5px;
+  font-size: 1rem;
+  border: none;
+  outline: none;
+}
+.rightbtn {
+  margin-top: 2.5rem;
+}
+.btn button {
+  width: 100%;
+  font-size: 1rem;
+  padding: 8px 0px;
+  border-radius: 15px;
+  outline: none;
+  background: rgb(50, 50, 245);
+  border: 1px solid  blue;
+  color: white;
+  text-align: center;
+}
+
+.logoutbox{
+  color: red;
+  display: flex;
+  justify-content: left;
+ 
+ align-items: last baseline;
+  width: 80vw;
+  height: 25vh;
+ 
+ 
+ 
+}
+.logoutbox p{
+  color:  red;
+  font-size: 1.2rem;
+  
+ 
+}
+.logoutbox p span{
+ 
+ 
+  font-size: 1.2rem;
+  
+}

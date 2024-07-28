@@ -1,0 +1,55 @@
+.page {
+  width: 100vw;
+  height: auto;
+  background: rgb(54, 53, 53);
+}
+
+.Header {
+  display: flex;
+  justify-content: space-between;
+  align-items:center;
+  text-align: center;
+  background: rgb(17, 16, 16);
+  height: 10vh;
+  color:white;
+  position: fixed;
+  width: 100vw;
+}
+.Input{
+   
+    margin-left: 2rem;
+    
+
+}
+.Input input {
+    all:unset;
+    background:rgb(83, 82, 82);
+    font-size: .9rem;
+    text-align: start;
+    width:15vw;
+    padding: 4px 10px;
+    font-weight: 500;
+    
+}
+.pagebtn{
+  
+    width: 20vw;
+    display:flex;
+    justify-content: space-around;
+
+}
+
+.pagebtn button {
+  all: unset;
+  border-radius:10px;
+  padding: 5px 10px;
+
+}
+.pagebtn button :hover{
+    border:1px solid rgb(50, 157, 223);
+    color:rgb(50, 157, 223);
+}
+.detail button {
+  all: unset;
+}
+

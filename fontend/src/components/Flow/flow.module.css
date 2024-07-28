@@ -1,0 +1,60 @@
+.page{
+    width: 100vw;
+   height: 100vh;
+    position: relative;
+}
+.leftbox{
+  
+    width: 25vw;
+    height: 90vh;
+    border:1px solid grey;
+    border-radius: 10px;
+    background:rgb(22, 22, 22);
+   position: fixed;
+   top: 5rem;
+   left:2rem;
+   color:white;
+
+}
+.btnbubble , .btnInput{
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 5px;
+   
+}
+.btnbubble button , .btnInput button {
+    all:unset;
+    background:rgb(48, 48, 48);
+    border : 1px solid rgb(58, 57, 57);
+    border-radius:10px;
+    padding: 8px 0px ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 5px;
+    gap: 5px;
+}
+.btnbubble button span{
+    color:rgb(96, 145, 238);
+    padding-top: 2px;
+ 
+
+   
+   
+}
+.btnInput button span{
+    color:rgb(243, 198, 114);
+    padding-top: 2px;
+
+
+}
+
+.box1 p , .box2 p{
+
+    font-size: 1.2rem;  
+    font-weight: bolder;
+
+}
+.box1,.box2{
+    padding : 5px  10px;
+}
