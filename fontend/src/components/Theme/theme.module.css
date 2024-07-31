@@ -1,7 +1,19 @@
 .box {
-    text-align: center;
-    padding: 20px;
+    display:flex;
+    height:90vh;
+    width:100vw;
   }
+  .themebox{
+    width:25vw;
+    background: #18181B;
+    color:white;
+
+
+  }
+  .chatbox{
+    width:75vh;
+  }
+  
   
   .themeselector {
     margin-bottom: 20px;
@@ -16,10 +28,8 @@
   
   .chatwindow {
     border: 1px solid #ccc;
-    border-radius: 10px;
-    padding: 10px;
-    max-width: 400px;
-    margin: 0 auto;
+    width:75vh;
+   
   }
   
   .message {
@@ -37,4 +47,4 @@
     color: #fff;
     align-self: flex-end;
   }
-  
+   

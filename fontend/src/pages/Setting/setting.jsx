@@ -52,6 +52,7 @@ function Setting() {
     try {
       await updateAuth(settings);
       alert('Settings updated successfully');
+      navigate('/dashboard');
     } catch (error) {
       console.error('Error updating settings:', error);
     }
@@ -59,7 +60,6 @@ function Setting() {
 
   const handleLogout = async () => {
     localStorage.removeItem('token');
-    setIsActive(false);
     navigate('/login');
   }
 
@@ -114,10 +114,7 @@ function Setting() {
         </div >
       </div>
       <div className={styles.logoutbox}>
-        {isActive && (<p onClick={handleLogout}> <span><IoLogOutOutline /></span>Logout</p>)}
-
-
-
+        <p onClick={handleLogout}> <span><IoLogOutOutline /></span>Logout</p>
       </div>
     </div>
   );

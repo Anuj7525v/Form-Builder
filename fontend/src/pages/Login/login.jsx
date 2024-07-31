@@ -14,22 +14,16 @@ export default function SignUp() {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-        /* login({email,password}).then((response) => {
-             alert(`Welcome,${response.data}`);
-             localStorage.getItem("token",response.data.token);
-             localStorage.getItem("authId",response.data.authId);
-             navigate("/dashboard");  */
-        try {
-            const response = await login({ email, password });
+        const data = {email,password};
+           login(data).then((response) => {
             console.log(response);
-            alert(`Welcome,${response.data}`);
+            alert(`Welcome,${response.data.username}`);
             localStorage.setItem("token", response.data.token);
             localStorage.setItem("authId", response.data.authId);
             navigate("/dashboard");
-        }
-        catch (error) {
-            console.log(error);
-        }
+           });
+        
+        
 
     };
 

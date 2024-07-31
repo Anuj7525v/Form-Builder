@@ -1,0 +1,22 @@
+.navbar{
+   width: auto;
+   
+}
+.navbar select{
+   
+    background:transparent;
+    color:white;padding: 10px 10px;
+    border-radius: 5px;
+    
+    
+
+}
+select option{
+    all: unset;
+    background: black;
+    color :white;
+   
+}
+select option:nth-child(2){
+    background:black;
+}

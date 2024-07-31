@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import styles from "./register.module.css";
-import  {signup} from "../../Service/auth";
-import {useNavigate} from "react-router-dom";
+import { useNavigate } from "react-router-dom";
+
+import { signup } from '../../Service/auth.js';
 
 
 export default function SignUp() {
@@ -14,10 +15,29 @@ export default function SignUp() {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-        const data = (username,email,password,confirmPassword);
-        const response = await signup(data);
-        alert(response.data);
-        navigate("/login");
+
+        if (password !== confirmPassword) {
+            setError("Passwords do not match");
+            return;
+        }
+
+        try {
+            const data = { username, email, password,confirmPassword };
+            const response = await signup(data);
+            if (response.status === 200) {
+                alert(response.data);
+                navigate('/login');
+            }
+        } catch (error) {
+            setError(error.message);
+        }
+
+
+
+
+
+
+
 
     };
 
@@ -76,10 +96,10 @@ export default function SignUp() {
                 </div>
             </div>
             <div className={styles.icons}>
-            <div className={styles.triangle1}></div>
-            <div className={styles.triangle2}></div>
-              <div className={styles.circle1}></div>
-              <div className={styles.circle2}></div>
+                <div className={styles.triangle1}></div>
+                <div className={styles.triangle2}></div>
+                <div className={styles.circle1}></div>
+                <div className={styles.circle2}></div>
 
             </div>
 

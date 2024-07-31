@@ -8,6 +8,8 @@ import Theme from "./components/Theme/theme.jsx";
 import Flow from "./components/Flow/flow.jsx";
 import Response from "./components/Response/response.jsx";
 import WorkSpace from './pages/Workspace/workspace.jsx';
+import Navbar from './components/Navbar/navbar.jsx';
+
 
 function App() {
   return (
@@ -23,7 +25,7 @@ function App() {
          <Route path = '/flow' element={<Flow/>} />
          <Route path = '/response' element={<Response/>} />
          <Route path = '/workspace' element={<WorkSpace/>} />
-        
+        <Route path ="/navbar" element={<Navbar/>}/>
          
           
     

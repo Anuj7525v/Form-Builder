@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import ThemeSelector from './themechoice/themechoice';
 import ChatWindow from './chatpage/chatpage';
@@ -33,10 +34,12 @@ const themes = {
   
     return (
       <div className={styles.box} style={{ background: themes[theme].background, color: themes[theme].color }}>
-        <ThemeSelector setTheme={setTheme} />
-        <ChatWindow theme={themes[theme]} />
+       <div className={styles.themebox}> <ThemeSelector setTheme={setTheme} /></div>
+       <div className={styles.chatbox}><ChatWindow theme={themes[theme]} /></div>
+        
       </div>
     );
   }
   
   export default Theme;
+ 

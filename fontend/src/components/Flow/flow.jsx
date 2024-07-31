@@ -44,13 +44,14 @@ const components = {
 };
 
 const Flow = () => {
-  const [modalIsOpen, setModalIsOpen] = useState(false);
-  const [activeComponent, setActiveComponent] = useState(null);
+  const [items, setItems] = useState([]);
 
-  const handleClick = (componentName) => {
-    setActiveComponent(componentName);
-    setModalIsOpen(true);
+  const handleClick = (type) => {
+    setItems([...items, type]);
   };
+
+
+
 
   return (
     <div className={styles.page}>
@@ -90,12 +91,24 @@ const Flow = () => {
         </div>
 
       </div>
-
-
-      <Modal isOpen={modalIsOpen} onRequestClose={() => setModalIsOpen(false)}>
-        <button onClick={() => setModalIsOpen(false)}>Close</button>
-        {activeComponent && React.createElement(components[activeComponent])}
-      </Modal>
+      <div className={styles.rightbox}>
+        <div className={styles.start}>Start</div>
+        {items.map((item, index) => (
+          <div key={index} className={styles.item}>
+            {item === 'Text' && <div>Text Bubble</div>}
+            {item === 'Image' && <div>Image Bubble</div>}
+            {item === 'Video' && <div>Video Bubble</div>}
+            {item === 'GIF' && <div>GIF Bubble</div>}
+            {item === 'TextInput' && <input type="text" placeholder="Text Input" />}
+            {item === 'Number' && <input type="number" placeholder="Number Input" />}
+            {item === 'Email' && <input type="email" placeholder="Email Input" />}
+            {item === 'Phone' && <input type="tel" placeholder="Phone Input" />}
+            {item === 'Date' && <input type="date" />}
+            {item === 'Rating' && <div>Rating Input</div>}
+            {item === 'Buttons' && <div>Button Input</div>}
+          </div>
+        ))}
+      </div>
     </div>
   );
 };

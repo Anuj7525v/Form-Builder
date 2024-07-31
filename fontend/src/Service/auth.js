@@ -1,11 +1,14 @@
 import axios from "axios";
 
 
-export const signup = async (data) => {
+export  const signup = async (data) => {
     try {
         const response = await axios.post(
-            "http://localhost:4000/api/auth/signup", data);
+            "http://localhost:4000/api/auth/signup"
+          
+            , data);
         return response;
+        
     }
     catch (error) {
         return error;
@@ -48,6 +51,5 @@ export const allSetting = async (data) => {
     catch (error) {
         return error;
     }
-}
-
+;}
 

@@ -1,8 +1,9 @@
-import React from 'react'
+import React from 'react';
+import styles from './response.module.css';
 
 function Response() {
   return (
-    <div>
+    <div className={styles.page}>
       <h1>response</h1>
     </div>
   )

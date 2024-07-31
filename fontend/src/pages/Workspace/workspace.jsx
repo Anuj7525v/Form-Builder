@@ -6,11 +6,11 @@ import Theme from '../../components/Theme/theme';
 
 function WorkSpace() {
     const [currentPage,setCurrentPage] = useState('flow');
-    const switchPage = () => {
+   const switchPage = () => {
         switch (currentPage) {
            case 'flow': return <Flow/>;
-           case 'Theme' : return <Theme/>;
-           case 'Response' : return <Response/>;
+           case 'theme' : return <Theme/>;
+           case 'response' : return <Response/>;
            default : return <Flow/>;
         }
     };
@@ -24,8 +24,8 @@ function WorkSpace() {
         </div>
         <div className={styles.pagebtn}>
           <button onClick={() => setCurrentPage('flow')}>Flow</button>
-          <button onClick={() => setCurrentPage('Theme')}>Theme</button>
-          <button onClick={() => setCurrentPage('Response')}>Response</button>
+          <button onClick={() => setCurrentPage('theme')}>Theme</button>
+          <button onClick={() => setCurrentPage('response')}>Response</button>
         </div>
         <div className={styles.detail}>
             <button>Share</button>
@@ -34,7 +34,7 @@ function WorkSpace() {
         </div>
     </div>
     <div className={styles.Middle}>
-        {switchPage()}
+   {switchPage()}
     </div>
 
       

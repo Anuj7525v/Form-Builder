@@ -18,11 +18,11 @@ const newAuth = new Schema({
         required:true,
         unique:true,
     },
-    confirmPassword:{
-        type:String,
-        required:true,
-        unique:true,
-    }
+ //   confirmPassword:{
+   //     type:String,
+   //     required:true,
+ //       unique:true,
+ //   }
 });
 
 module.exports = mongoose.model("Auth",newAuth);

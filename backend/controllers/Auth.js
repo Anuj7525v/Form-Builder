@@ -20,7 +20,7 @@ const Signup = async (req, res, next) => {
    }
    const hashPassword = ((await bcrypt.hash(password,10)) && (await bcrypt.hash(confirmPassword,10)));
    const newAuth = new Auth({
-    username,email,password:hashPassword,confirmPassword:hashPassword
+    username,email,password:hashPassword
    });
    await newAuth.save();
    res.status(200).send("User registered successfully");
@@ -45,7 +45,7 @@ const Login = async (req, res, next) => {
         if(!isPasswordValid){
             return res.status(400).send("Invalid email or password");
     }
-    const token = jwt.sign({authId:auth._id},"Secret",{expiresIn:"240h",});
+    const token = jwt.sign({authId:auth._id},process.env.Secret_key,{expiresIn:"240h",});
 
     res.status(200).json({
         token,
