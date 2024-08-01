@@ -1,8 +1,9 @@
-import React from 'react';
+import React,{useState} from 'react';
 import { useNavigate } from 'react-router-dom';
 import styles from './navbar.module.css';
 
 function Navbar(){
+  const [username] = useState("John Doe");
   const navigate = useNavigate();
 
   const handleChange = (e) => {
@@ -18,7 +19,10 @@ function Navbar(){
   return (
     <div className={styles.navbar}>
       <select onChange={handleChange} defaultValue="" className={styles.dropdown}>
-        <option value="" disabled >Dewank Rastogi's workspace</option>
+        <option value="" disabled > {username} WorkSpace
+       
+
+        </option>
         <option value="setting">Settings</option>
         <option value="logout" >Log Out</option>
       </select>

@@ -1,10 +1,11 @@
 
 import React, { useState, useEffect } from 'react';
-import { allSetting, updateAuth } from '../../Service/auth';
+import { allSetting, updateSetting } from '../../Service/auth';
 import styles from "./setting.module.css";
 import { CiUser, CiMail, CiLock } from "react-icons/ci";
 import { useNavigate } from "react-router-dom";
 import { IoLogOutOutline } from "react-icons/io5";
+
 
 
 function Setting() {
@@ -40,23 +41,27 @@ function Setting() {
     fetchSettings();
   }, []);
 
+
+
   const handleChange = (e) => {
-    const { name, value } = e.target;
-    setSettings((prevSettings) => ({
-      ...prevSettings,
-      [name]: value,
-    }));
+    setSettings({
+      ...settings,
+      [e.target.name]: e.target.value,
+    });
   };
 
-  const handleUpdate = async () => {
-    try {
-      await updateAuth(settings);
-      alert('Settings updated successfully');
-      navigate('/dashboard');
+ const handleUpdate = async () => {
+  try {
+    const response = await updateSetting(settings);
+    console.log(response);
+    alert('Settings updated successfully');
+    navigate('/dashboard');
     } catch (error) {
-      console.error('Error updating settings:', error);
-    }
-  };
+      console.error('Error updating user settings:', error);
+      }
+ };
+
+
 
   const handleLogout = async () => {
     localStorage.removeItem('token');

@@ -1,10 +1,11 @@
 import axios from "axios";
+import {BACKEND_URL} from "../constant";
 
 
 export  const signup = async (data) => {
     try {
         const response = await axios.post(
-            "http://localhost:4000/api/auth/signup"
+            `${BACKEND_URL}/api/auth/signup`
           
             , data);
         return response;
@@ -18,7 +19,7 @@ export  const signup = async (data) => {
 export const login = async (data) => {
     try {
         const response = await axios.post(
-            "http://localhost:4000/api/auth/login", data);
+            `${BACKEND_URL}/api/auth/login`, data);
         return response;
     }
     catch (error) {
@@ -30,10 +31,10 @@ export const login = async (data) => {
 };
 
 
-export const updateAuth = async (data) => {
+export const updateSetting = async (data) => {
     try {
         const response = await axios.patch(
-            "http://localhost:4000/api/updateauth/update", data);
+            `${BACKEND_URL}/api/updateauth/update`, data);
         return response;
     }
     catch (error) {
@@ -45,7 +46,7 @@ export const allSetting = async (data) => {
     try {
         const response = await axios.get(
 
-            "http://localhost:4000/api/setting/allsetting", data)
+           `${BACKEND_URL}/api/setting/allsetting`, data)
         return response;
     }
     catch (error) {

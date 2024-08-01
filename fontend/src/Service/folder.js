@@ -1,9 +1,11 @@
 import axios from "axios";
+import {BACKEND_URL} from "../constant";
+
 
 export const allfolder = async () => {
     try {
         const response = await axios.get(
-            "http://localhost:4000/api/folder/allfolder");
+          `${BACKEND_URL}/api/folder/allfolder`);
         return response;
     }
     catch (error) {
@@ -14,7 +16,7 @@ export const allfolder = async () => {
 export const createfolder = async (data) => {
     try {
         const response = await axios.post(
-            "http://localhost:4000/api/folder/createfolder", data);
+            `${BACKEND_URL}/api/folder/createfolder`, data);
         return response;
     }
     catch (error) {
@@ -25,7 +27,7 @@ export const createfolder = async (data) => {
 export const deletefolder = async (id, data) => {
     try {
         const response = await axios.delete(
-            "http://localhost:4000/api/folder/deletefolder/" + id, data);
+            `${BACKEND_URL}/api/folder/deletefolder/` + id, data);
         return response;
     }
     catch (error) {
